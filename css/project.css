@@ -1,0 +1,48 @@
+.project {
+   
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.project-image img {
+    max-inline-size: 100%;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;   
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+       /* border: 1px solid red;*/
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    .project-description{
+        flex: 1;
+    }
+   
+    .project .project-image1 {
+       /*border: 1px solid red;*/
+       order: 2;
+       flex: 1;
+       text-align: center;
+    }
+    .project .project-image2 {
+        /* border: 1px solid red;*/
+        order: -1;
+        flex: 1;
+        text-align: center;
+    }
+    .project .project-image3 {
+        /* border: 1px solid red;*/
+        order: 2;
+        flex: 1;
+        text-align: center;
+    }
+}
